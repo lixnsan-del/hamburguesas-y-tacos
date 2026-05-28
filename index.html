@@ -2,95 +2,127 @@
 <html lang="es">
 
 <head>
-
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Hamburguesas y Tacos MX</title>
+<title>🍳 Recetas Deliciosas</title>
 
 <style>
 
 body{
-    background-color:#fff4e6;
-    font-family:Arial, sans-serif;
     margin:0;
-    text-align:center;
+    font-family:Arial;
+    background:#fff8f0;
 }
 
 /* ENCABEZADO */
 
 header{
-    background-color:#ff7b00;
+    background:#ff7043;
     color:white;
-    padding:20px;
+    text-align:center;
+    padding:25px;
 }
 
 header h1{
+    margin:0;
     font-size:45px;
 }
 
 header p{
-    font-size:20px;
+    font-size:18px;
 }
 
-/* CONTENEDORES */
+/* MENÚ */
+
+nav{
+    background:#ffab91;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:black;
+    text-decoration:none;
+    margin:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+/* CONTENEDOR */
 
 .contenedor{
-    background-color:white;
-    margin:20px;
-    padding:20px;
-    border-radius:15px;
-    box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+    width:90%;
+    margin:auto;
 }
 
-/* TÍTULOS */
+/* IMAGEN PRINCIPAL */
 
-h2{
-    color:#d62828;
+.principal{
+    text-align:center;
+    margin-top:25px;
+}
+
+.principal img{
+    width:90%;
+    max-width:900px;
+    border-radius:20px;
 }
 
 /* RECETAS */
 
 .receta{
-    background-color:#ffe8cc;
-    margin:15px;
-    padding:15px;
-    border-radius:10px;
+    background:white;
+    margin-top:30px;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0px 0px 10px gray;
 }
 
-/* IMÁGENES */
-
-img{
-    border-radius:10px;
-    margin:10px;
+.receta img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
 }
 
-/* BOTÓN */
+h2{
+    color:#ff7043;
+}
 
-.boton{
-    background-color:#ff7b00;
+/* TABLA */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:30px;
+    background:white;
+}
+
+th{
+    background:#ff7043;
     color:white;
-    padding:12px 25px;
-    border-radius:10px;
-    text-decoration:none;
-    font-weight:bold;
+    padding:15px;
 }
 
-.boton:hover{
-    background-color:#d62828;
+td{
+    border:1px solid gray;
+    padding:12px;
+    text-align:center;
 }
 
 /* FOOTER */
 
 footer{
-    background-color:#ff7b00;
+    background:#ff7043;
     color:white;
-    padding:15px;
-    margin-top:20px;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
 }
 
 </style>
-
 </head>
 
 <body>
@@ -98,160 +130,197 @@ footer{
 <!-- ENCABEZADO -->
 
 <header>
-
-<h1>🍔 Hamburguesas y Tacos MX 🌮</h1>
-
-<p><i>Las mejores recetas de comida rápida</i></p>
-
+<h1>🍳 Recetas Deliciosas</h1>
+<p>Recetas fáciles, rápidas y deliciosas</p>
 </header>
 
-<!-- INTRODUCCIÓN -->
+<!-- MENÚ -->
+
+<nav>
+<a href="#">Inicio</a>
+<a href="#">Recetas</a>
+<a href="#">Categorías</a>
+<a href="#">Contacto</a>
+</nav>
 
 <div class="contenedor">
 
-<h2>Bienvenido</h2>
+<!-- IMAGEN PRINCIPAL -->
+
+<div class="principal">
+
+<img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+
+<br><br>
+
+<h2>Comida atractiva y deliciosa 🍽️</h2>
 
 <p>
-En esta página encontrarás recetas fáciles de 
-<strong>hamburguesas y tacos</strong> para preparar en casa.
-</p>
-
-<p>
-Aprende a cocinar de manera divertida usando ingredientes sencillos.
+En esta página encontrarás recetas fáciles de preparar,
+ingredientes sencillos y pasos detallados para cocinar
+platillos deliciosos desde casa.
 </p>
 
 </div>
 
-<!-- IMÁGENES PRINCIPALES -->
-
-<div class="contenedor">
-
-<h2>Comida Destacada</h2>
-
-<img width="300"
-src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
-
-<img width="300"
-src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85">
-
-</div>
-
-<!-- RECETAS -->
-
-<div class="contenedor">
-
-<h2>Recetas Populares</h2>
-
-<!-- HAMBURGUESA -->
-
-<div class="receta">
-
-<h2>🍔 Hamburguesa Especial</h2>
-
-<img width="250"
-src="https://images.unsplash.com/photo-1561758033-d89a9ad46330">
-
-<p>
-<strong>Ingredientes:</strong><br>
-Carne<br>
-Pan<br>
-Queso<br>
-Lechuga<br>
-Jitomate
-</p>
-
-<p>
-<strong>Preparación:</strong><br>
-1. Cocinar la carne.<br>
-2. Calentar el pan.<br>
-3. Agregar los ingredientes.<br>
-4. Servir caliente.
-</p>
-
-</div>
-
-<!-- TACOS -->
+<!-- RECETA 1 -->
 
 <div class="receta">
 
 <h2>🌮 Tacos al Pastor</h2>
 
-<img width="250"
-src="https://images.unsplash.com/photo-1613514785940-daed07799d9b">
+<img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=900&q=80">
 
-<p>
-<strong>Ingredientes:</strong><br>
-Tortillas<br>
-Carne al pastor<br>
-Piña<br>
-Cebolla<br>
-Cilantro
-</p>
+<br><br>
 
-<p>
-<strong>Preparación:</strong><br>
-1. Cocinar la carne.<br>
-2. Calentar las tortillas.<br>
-3. Agregar cebolla y cilantro.<br>
-4. Servir con salsa.
-</p>
+<b>Ingredientes:</b>
+
+<br>
+
+Carne de cerdo, piña, tortillas, cebolla,
+cilantro, achiote y especias.
+
+<br><br>
+
+<b>Preparación:</b>
+
+<br>
+
+Marina la carne con achiote y especias durante
+2 horas. Cocina en un sartén hasta dorar.
+Calienta las tortillas y agrega la carne,
+piña, cebolla y cilantro.
+
+<br><br>
+
+<a href="https://es.wikipedia.org/wiki/Taco_al_pastor">
+Más información sobre tacos al pastor
+</a>
+
+</div>
+
+<!-- RECETA 2 -->
+
+<div class="receta">
+
+<h2>🍔 Hamburguesa</h2>
+
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80">
+
+<br><br>
+
+<b>Ingredientes:</b>
+
+<br>
+
+Carne molida, pan, queso, tomate,
+lechuga y mayonesa.
+
+<br><br>
+
+<b>Preparación:</b>
+
+<br>
+
+Forma la carne en hamburguesa y cocínala
+en sartén. Agrega queso y coloca dentro
+del pan junto con verduras y salsas.
+
+<br><br>
+
+<a href="https://es.wikipedia.org/wiki/Hamburguesa">
+Más información sobre hamburguesas
+</a>
 
 </div>
 
+<!-- RECETA 3 -->
+
+<div class="receta">
+
+<h2>🥞 Hot Cakes</h2>
+
+<img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=900&q=80">
+
+<br><br>
+
+<b>Ingredientes:</b>
+
+<br>
+
+Harina, leche, huevo, azúcar,
+mantequilla y miel.
+
+<br><br>
+
+<b>Preparación:</b>
+
+<br>
+
+Mezcla todos los ingredientes hasta
+obtener una mezcla suave. Cocina
+en sartén caliente y sirve con miel.
+
+<br><br>
+
+<a href="https://es.wikipedia.org/wiki/Panqueque">
+Más información sobre hot cakes
+</a>
+
 </div>
 
-<!-- GALERÍA -->
+<!-- TABLA -->
 
-<div class="contenedor">
+<h2 align="center">📋 Tabla de Recetas</h2>
 
-<h2>Galería de Comida</h2>
+<table>
 
-<img width="200"
-src="https://images.unsplash.com/photo-1571091718767-18b5b1457add">
+<tr>
+<th>Platillo</th>
+<th>Tiempo</th>
+<th>Dificultad</th>
+<th>Porciones</th>
+</tr>
 
-<img width="200"
-src="https://images.unsplash.com/photo-1606755962773-d324e0a13086">
+<tr>
+<td>Tacos al Pastor</td>
+<td>40 min</td>
+<td>Media</td>
+<td>4</td>
+</tr>
 
-<img width="200"
-src="https://images.unsplash.com/photo-1504674900247-0877df9cc836">
+<tr>
+<td>Hamburguesa</td>
+<td>25 min</td>
+<td>Fácil</td>
+<td>2</td>
+</tr>
 
-</div>
+<tr>
+<td>Hot Cakes</td>
+<td>20 min</td>
+<td>Fácil</td>
+<td>3</td>
+</tr>
+
+</table>
+
+<br><br>
 
 <!-- VIDEO -->
 
-<div class="contenedor">
+<center>
 
-<h2>Video de Recetas</h2>
+<h2>🎥 Video de Cocina</h2>
 
-<p>
-Aprende a preparar hamburguesas y tacos viendo este video:
-</p>
-
-<iframe width="350" height="220"
-src="https://www.youtube.com/embed/qW8h5Kkwx8o"
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/4aZr5hZXP_s"
+title="Video de cocina"
 frameborder="0"
 allowfullscreen>
 </iframe>
 
-</div>
-
-<!-- ENLACE -->
-
-<div class="contenedor">
-
-<h2>Más recetas</h2>
-
-<p>
-Visita el siguiente sitio para conocer más recetas:
-</p>
-
-<a class="boton"
-href="https://www.recetasgratis.net"
-target="_blank">
-
-Ver recetas
-
-</a>
+</center>
 
 </div>
 
@@ -259,9 +328,17 @@ Ver recetas
 
 <footer>
 
-<p><i>Contacto:</i> hamburguesasytacos@email.com</p>
+<h3>📱 Redes Sociales</h3>
 
-<p><strong>© 2026 Hamburguesas y Tacos MX</strong></p>
+Instagram | Facebook | TikTok
+
+<br><br>
+
+Autor: Lian SLP
+
+<br><br>
+
+© 2026 Recetas Deliciosas
 
 </footer>
 
